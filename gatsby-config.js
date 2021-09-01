@@ -40,5 +40,18 @@ module.exports = {
       },
       __key: "pages",
     },
+
+    // ----- Add Neew Config
+
+    `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        postCssPlugins: [
+          require("tailwindcss"),
+          require("./tailwind.config.js"), // Optional: Load custom Tailwind CSS configuration
+        ],
+      },
+    },
   ],
 };
