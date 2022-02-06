@@ -12,6 +12,8 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
+      sans: ['Google Sans', 'sans-serif'],
+      serif: ['Playfair Display', 'serif'],
       'playfairdisplay': ['Playfair Display', 'serif'],
     },
   },
