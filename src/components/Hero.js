@@ -30,11 +30,10 @@ function HeroImageTitleCenter(props) {
                             </h1>
                         </div>
 
-                        <a
-                            href="#"
+                        <button
                             className="inline-flex cursor-pointer items-center justify-center px-3 py-2 md:px-5 md:py-3 border border-transparent text-base font-medium rounded-full text-black bg-white hover:bg-gray-300">
                             Read Invitation
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -64,14 +63,11 @@ export default function HeroImageTitleLeft(props) {
                                 Bisma Kharisma
                             </h1>
                         </div>
-                        <a
-                            href="#"
+                        <button
                             className="inline-flex cursor-pointer items-center justify-center px-5 py-2 md:px-6 md:py-3 border border-transparent text-base font-medium rounded-full text-black bg-white hover:bg-gray-300">
                             Read Invitation
-                        </a>
+                        </button>
                     </div>
-
-
                 </div>
             </div>
         </header>

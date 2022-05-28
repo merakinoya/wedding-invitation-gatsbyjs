@@ -6,23 +6,25 @@ import Seo from "../components/seo"
 import { ShareIcon } from '@heroicons/react/outline'
 import HeroImageTitleLeft from "../components/Hero"
 import Story from "../components/Story"
+import Schedule from "../components/Schedule"
 
 
 const IndexPage = () => (
   <Layout>
-    <Seo title="Wedding Invitation" />
+    <Seo title="Ovia & Bisma" />
 
+    {/* -- HERO HEADER -- */}
     <HeroImageTitleLeft />
 
-
-
+    {/* -- BODY CONTENT -- */}
     <main className="mt-6 sm:mt-10 md:mt-16 px-4 container md:container mx-auto md:mx-auto">
       <div className="max-w-5xl mx-auto space-y-16">
-        {/* Replace with your content */}
 
         {/* -- GREETING -- */}
         <section id="openingContent" className="space-y-6">
-          <h1 className="text-2xl md:text-4xl text-center capitalize font-playfairdisplay font-semibold">Assalamu’alaikum Warahmatullaahi Wabarakaatuh</h1>
+          <h1 className="text-2xl md:text-4xl text-center capitalize font-playfairdisplay font-semibold">
+            Assalamu’alaikum Warahmatullaahi Wabarakaatuh
+          </h1>
           <p className="text-base md:text-2xl text-center">
             Dengan memohon rahmat dan ridho-Mu Ya Allah, Kami bermaksud mengadakan acara resepsi pernikahan putra dan putri kami
           </p>
@@ -62,67 +64,7 @@ const IndexPage = () => (
 
         </section>
 
-
-        <section id="eventTime" className="space-y-4 sm:space-y-8 text-center lg:text-center">
-          <p className="text-base md:text-2xl text-center">
-            Acara Pernikahan kami Insya Allah akan dilaksanakan pada :
-          </p>
-
-
-          <div className="flex-none md:flex sm:justify-around gap-6 space-y-6 md:space-y-0 sm:mx-6 items-center">
-
-
-            <div className="md:p-8 p-5 text-center space-y-4 md:space-y-8 border border-gray-200 rounded-2xl">
-              <p className="text-2xl md:text-4xl text-center font-playfairdisplay font-semibold">
-                Akad Nikah
-              </p>
-              <div className="space-y-2 md:space-y-4">
-                <p className="text-base md:text-xl text-gray-500">Jumat, 24 Mar 2021</p>
-                <p className="text-base md:text-xl text-gray-500">Jam 08:00 - 10:00 WIB</p>
-                <a href="https://www.google.com/maps/dir/?api=1&destination=Gedung+Sasana+Budaya" target="_blank" rel="noreferrer" className="text-base md:text-xl text-gray-500 underline">Gedung Sasana Budaya. Jl. Cipto Mangunkusumo No.12, Yogyakarta </a>
-              </div>
-              <iframe
-                className="w-full h-40"
-                title="Event Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.185187536794!2d110.37567331530165!3d-7.770177794400028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a584b387308b7%3A0xea2ce4460a11afdb!2sGrha%20Sabha%20Pramana%20(GSP)%20UGM!5e0!3m2!1sid!2sid!4v1630478630328!5m2!1sid!2sid"
-                allowfullscreen=""
-                loading="lazy"></iframe>
-            </div>
-
-            <div className="md:p-8 p-5 text-center space-y-4 md:space-y-8 border border-gray-200 rounded-2xl">
-              <p className="text-2xl md:text-4xl text-center font-playfairdisplay font-semibold">
-                Resepsi Nikah
-              </p>
-              <div className="space-y-2 md:space-y-4">
-                <p className="text-base md:text-xl text-gray-500">Sabtu, 25 Mar 2021</p>
-                <p className="text-base md:text-xl text-gray-500">Jam 19:00 - 22:00 WIB</p>
-                <a href="https://www.google.com/maps/dir/?api=1&destination=Gedung+Sasana+Budaya" target="_blank" rel="noreferrer" className="text-base md:text-xl text-gray-500 underline">Gedung Sasana Budaya. Jl. Cipto Mangunkusumo No.12, Yogyakarta </a>
-              </div>
-              <iframe
-                className="w-full h-40"
-                title="Event Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.185187536794!2d110.37567331530165!3d-7.770177794400028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a584b387308b7%3A0xea2ce4460a11afdb!2sGrha%20Sabha%20Pramana%20(GSP)%20UGM!5e0!3m2!1sid!2sid!4v1630478630328!5m2!1sid!2sid"
-                allowfullscreen=""
-                loading="lazy"></iframe>
-            </div>
-
-
-          </div>
-
-
-          <div className="items-center">
-
-            <a
-              href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Pernikahan+Ovia+dan+Bisma&dates=20210707T120000Z/20210707T130000Z&location=D+I+Yogyakarta&details=Jangan+Lupa+datang+ya+&ctz=Asia/Jakarta"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center justify-center px-5 py-2 md:px-5 md:py-3 border border-black text-base font-medium rounded-full text-black bg-white hover:bg-gray-300">
-              Save to Calendar
-            </a>
-          </div>
-
-        </section>
-
+        <Schedule />
         <hr></hr>
 
         <Story />
@@ -190,8 +132,6 @@ const IndexPage = () => (
         {/* /End replace */}
       </div>
     </main>
-
-
 
   </Layout>
 )

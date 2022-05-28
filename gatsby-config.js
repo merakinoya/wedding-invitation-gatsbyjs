@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
-    title: "tailwind-gatsbyjs",
+    title: "Wedding Invitation",
   },
   plugins: [
     "gatsby-plugin-gatsby-cloud",
