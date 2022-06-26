@@ -69,13 +69,13 @@ function SEO({ description, lang, meta, title }) {
                     content: metaDescription,
                 },
             ].concat(meta)}
-            
+
         />
     )
 }
 
 SEO.defaultProps = {
-    lang: `en`,
+    lang: `id`,
     meta: [],
     description: ``,
 }

@@ -4,9 +4,9 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 import { ShareIcon } from '@heroicons/react/outline'
-import HeroImageTitleLeft from "../components/Hero"
-import Story from "../components/Story"
-import Schedule from "../components/Schedule"
+import HeroImageTitleLeft from "../components/sections/Hero"
+import Story from "../components/sections/Story"
+import Schedule from "../components/sections/Schedule"
 
 
 const IndexPage = () => (
