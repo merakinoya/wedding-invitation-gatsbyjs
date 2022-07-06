@@ -7,6 +7,8 @@ import { ShareIcon } from '@heroicons/react/outline'
 import HeroImageTitleLeft from "../components/sections/Hero"
 import Story from "../components/sections/Story"
 import Schedule from "../components/sections/Schedule"
+import BrideProfile from "../components/sections/BrideProfile"
+
 
 
 const IndexPage = () => (
@@ -19,7 +21,6 @@ const IndexPage = () => (
     {/* -- BODY CONTENT -- */}
     <main className="mt-6 sm:mt-10 md:mt-16 px-4 container md:container mx-auto md:mx-auto">
       <div className="max-w-5xl mx-auto space-y-16">
-
         {/* -- GREETING -- */}
         <section id="openingContent" className="space-y-6">
           <h1 className="text-2xl md:text-4xl text-center capitalize font-playfairdisplay font-semibold">
@@ -32,45 +33,12 @@ const IndexPage = () => (
 
 
         {/* -- BRIDE PROFILE -- */}
-        <section className="flex sm:justify-around gap-6 sm:mx-6 items-center">
-
-          <figure className="text-center space-y-4 md:mx-24">
-            <img className="w-32 h-32 rounded-full mx-auto" srcSet="https://source.unsplash.com/QZRAaYfmvA8/320x320" alt="Person" />
-            <figcaption className="space-y-2 md:space-y-4">
-              <p className="text-lg md:text-3xl font-semibold capitalize">
-                Ovira Syifa Azahra
-              </p>
-              <p className="text-base md:text-xl text-gray-500">
-                Putri dari Bapak Nana Supriatna & Ibu Esih
-              </p>
-            </figcaption>
-          </figure>
-
-          <div className="text-2xl sm:text-4xl font-bold font-playfairdisplay capitalize">
-            &
-          </div>
-
-          <figure className="text-center space-y-4 md:mx-24">
-            <img className="w-32 h-32 rounded-full mx-auto" srcSet="https://source.unsplash.com/BFxyTaw3PsM/320x320" alt="Person" />
-            <figcaption className="space-y-2 md:space-y-4">
-              <p className="text-lg md:text-3xl font-semibold capitalize">
-                Bisma Kharisma
-              </p>
-              <p className="text-base md:text-xl text-gray-500">
-                Putra dari Bapak Saefudin & Ibu Nurhayati
-              </p>
-            </figcaption>
-          </figure>
-
-        </section>
+        <BrideProfile />
 
         <Schedule />
         <hr></hr>
-
         <Story />
-
         <hr></hr>
-
 
         <section id="shareUcapan" className="space-y-4 px-0 sm:px-8 lg:px-32">
           <h1 className="text-4xl font-semibold text-center font-playfairdisplay capitalize"> Bagikan Kartu Ucapan </h1>
@@ -117,7 +85,6 @@ const IndexPage = () => (
         </section>
 
         <hr></hr>
-
         {/* -- CLOSING STATEMENT -- */}
         <section id="closingStatement" className="space-y-6">
           <p className="text-base md:text-lg text-center">
@@ -127,8 +94,6 @@ const IndexPage = () => (
             Wassalamu’alaikum Warahmatullahi Wabarakaatuh.
           </p>
         </section>
-
-
         {/* /End replace */}
       </div>
     </main>
