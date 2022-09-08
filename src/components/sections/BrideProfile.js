@@ -39,11 +39,11 @@ function BrideProfile() {
                 ))
             }
 
-            < div className="absolute text-2xl sm:text-4xl font-bold font-playfairdisplay capitalize" >
+            <div className="absolute text-2xl sm:text-4xl font-bold font-playfairdisplay capitalize" >
                 &
-            </div >
+            </div>
 
-        </section >
+        </section>
 
     )
 }

@@ -8,6 +8,8 @@ import HeroImageTitleLeft from "../components/sections/Hero"
 import Story from "../components/sections/Story"
 import Schedule from "../components/sections/Schedule"
 import BrideProfile from "../components/sections/BrideProfile"
+import Component from "./Component"
+import Speech from "../components/sections/Speech"
 
 
 
@@ -38,6 +40,8 @@ const IndexPage = () => (
         <Schedule />
         <hr></hr>
         <Story />
+        <hr></hr>
+        <Speech />
         <hr></hr>
 
         <section id="shareUcapan" className="space-y-4 px-0 sm:px-8 lg:px-32">
